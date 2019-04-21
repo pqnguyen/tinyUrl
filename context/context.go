@@ -24,3 +24,8 @@ func SendSuccess(ctx *Context, message interface{}) {
 	res := response.SendSuccess(http.StatusOK, code.Success, message)
 	ctx.JSON(http.StatusOK, res)
 }
+
+func SendForbidden(ctx *Context) {
+	res := response.SendForbidden(http.StatusForbidden)
+	ctx.AbortWithStatusJSON(http.StatusForbidden, res)
+}

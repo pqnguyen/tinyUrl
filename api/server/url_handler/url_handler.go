@@ -3,6 +3,7 @@ package url_handler
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"tinyUrl/api/server/auth"
 	. "tinyUrl/context"
 	"tinyUrl/models/views"
 	"tinyUrl/services/url"
@@ -18,8 +19,25 @@ func NewUrlHandler(route *gin.RouterGroup) {
 	handler := &urlHandler{
 		UrlUCase: usecase.UrlUCase,
 	}
+
+	route.POST("/create_free_url", handler.createFreeUrlAPI)
+	route.GET("/go/:hash", handler.redirectUrlAPI)
+	route.Use(auth.Authenticate)
 	route.POST("/create_url", handler.createUrlAPI)
-	route.GET("/:hash", handler.redirectUrlAPI)
+}
+
+func (handler *urlHandler) createFreeUrlAPI(ctx *Context) {
+	var view views.CreateFreeURLView
+	if err := ctx.ShouldBindJSON(&view); err != nil {
+		SendError(ctx, code.ErrBadRequestedData)
+		return
+	}
+	urlObj, err := handler.UrlUCase.CreateFreeUrl(view.Url)
+	if err != nil {
+		SendError(ctx, err)
+		return
+	}
+	SendSuccess(ctx, urlObj.ToRes())
 }
 
 func (handler *urlHandler) createUrlAPI(ctx *Context) {
@@ -34,7 +52,7 @@ func (handler *urlHandler) createUrlAPI(ctx *Context) {
 		SendError(ctx, err)
 		return
 	}
-	SendSuccess(ctx, urlObj.ToRes(user))
+	SendSuccess(ctx, urlObj.ToRes())
 }
 
 func (handler *urlHandler) redirectUrlAPI(ctx *gin.Context) {
@@ -43,10 +61,10 @@ func (handler *urlHandler) redirectUrlAPI(ctx *gin.Context) {
 		SendError(ctx, code.ErrBadRequestedData)
 		return
 	}
-	urlObj, err := handler.UrlUCase.GetRedirectUrl(view.Hash)
+	originalURL, err := handler.UrlUCase.GetRedirectUrl(view.Hash)
 	if err != nil {
 		SendError(ctx, err)
 		return
 	}
-	ctx.Redirect(http.StatusPermanentRedirect, urlObj.OriginalURL)
+	ctx.Redirect(http.StatusPermanentRedirect, originalURL)
 }

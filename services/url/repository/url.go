@@ -30,15 +30,15 @@ func (u *urlRepository) GetUrl(hash string) (*Url, error) {
 	return &urlObj, nil
 }
 
-func (u *urlRepository) CreateURL(user *User, originalURL string, expiryDuration uint) (*Url, error) {
+func (u *urlRepository) CreateURL(user *User, originalURL string, expiryDuration time.Duration) (*Url, error) {
 	str := fmt.Sprintf("%s%d%d", originalURL, user.ID, time.Now().Unix())
 	byteHash := md5.Sum([]byte(str))
-	hash := base64.StdEncoding.EncodeToString(byteHash[:])
+	hash := base64.RawURLEncoding.EncodeToString(byteHash[:])
 	urlObj := Url{
 		Hash:           string(hash[:constant.DefaultHashLength]),
 		OriginalURL:    originalURL,
 		CreationDate:   time.Now(),
-		ExpirationDate: time.Now().Add(time.Duration(expiryDuration)),
+		ExpirationDate: time.Now().Add(expiryDuration * time.Second),
 		UserID:         user.ID,
 	}
 	b, err := bson.Marshal(&urlObj)

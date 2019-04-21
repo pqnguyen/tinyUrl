@@ -1,5 +1,9 @@
 package response
 
+import (
+	"tinyUrl/types/code"
+)
+
 type Response struct {
 	Status  int         `json:"status"`
 	Code    string      `json:"code"`
@@ -19,5 +23,12 @@ func SendSuccess(status int, code error, message interface{}) *Response {
 		Status:  status,
 		Code:    code.Error(),
 		Message: message,
+	}
+}
+
+func SendForbidden(status int) *Response {
+	return &Response{
+		Status: status,
+		Code:   code.ErrForbidden.Error(),
 	}
 }

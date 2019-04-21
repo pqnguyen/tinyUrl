@@ -12,6 +12,7 @@ type Url struct {
 	CreationDate   time.Time          `bson:"creation_date,omitempty"`
 	ExpirationDate time.Time          `bson:"expiration_date,omitempty"`
 	UserID         primitive.ObjectID `bson:"user_id,omitempty"`
+	User           User               `bson:"-"`
 }
 
 type UrlRes struct {
@@ -24,7 +25,7 @@ type UrlRes struct {
 	TinyUrl        string             `json:"tiny_url"`
 }
 
-func (url *Url) ToRes(creator *User) *UrlRes {
+func (url *Url) ToRes() *UrlRes {
 	return &UrlRes{
 		ID:             url.ID,
 		Hash:           url.Hash,
