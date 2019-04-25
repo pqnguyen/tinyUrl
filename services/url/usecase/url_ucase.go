@@ -1,17 +1,39 @@
 package usecase
 
 import (
+	"context"
+	"fmt"
+	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/mongo/options"
+	"strconv"
 	"time"
+	"tinyUrl/config/constant"
 	"tinyUrl/models"
 	"tinyUrl/services/cache"
 	"tinyUrl/services/url"
 	"tinyUrl/services/user"
+	"tinyUrl/types/code"
 )
 
 type urlUseCase struct {
 	urlRepo   url.Repository
 	userRepo  user.Repository
 	cacheRepo cache.Repository
+}
+
+func (u *urlUseCase) RecordStatistic(hash string) {
+	now := time.Now()
+	nWeek := now.Day() % 7
+	month := fmt.Sprintf("%02d/%d", now.Month(), now.Year())
+	upsert := true
+	_, _ = models.DB().Collection(models.Col.Statistic).UpdateOne(
+		context.Background(),
+		bson.M{
+			"hash":  hash,
+			"month": month,
+		}, bson.M{
+			"$inc": bson.M{strconv.Itoa(nWeek): 1},
+		}, &options.UpdateOptions{Upsert: &upsert})
 }
 
 func (u *urlUseCase) CreateFreeUrl(originalURL string) (*models.Url, error) {
@@ -33,7 +55,10 @@ func (u *urlUseCase) GetRedirectUrl(hash string) (string, error) {
 		}
 
 		leftExpiryDuration := urlObj.ExpirationDate.Unix() - time.Now().UTC().Unix()
-		if leftExpiryDuration > 0 {
+		if leftExpiryDuration < 0 {
+			return "", code.ErrTinyUrlExpired
+		}
+		if leftExpiryDuration > constant.DefaultLeftTimeCache {
 			u.cacheRepo.SetUrl(hash, urlObj.OriginalURL, time.Duration(leftExpiryDuration)*time.Second)
 		}
 		originalUrl = urlObj.OriginalURL

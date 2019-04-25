@@ -18,8 +18,9 @@ const (
 )
 
 type Collection struct {
-	Url  string
-	User string
+	Url       string
+	User      string
+	Statistic string
 }
 
 var Col Collection
@@ -64,8 +65,9 @@ func initDatabase() {
 
 	database[DBTinyUrl] = client.Database(DBTinyUrl)
 	Col = Collection{
-		Url:  "url",
-		User: "user",
+		Url:       "url",
+		User:      "user",
+		Statistic: "statistic",
 	}
 }
 

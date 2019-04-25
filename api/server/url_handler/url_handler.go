@@ -21,7 +21,7 @@ func NewUrlHandler(route *gin.RouterGroup) {
 	}
 
 	route.POST("/create_free_url", handler.createFreeUrlAPI)
-	route.GET("/go/:hash", handler.redirectUrlAPI)
+	route.GET("/:hash", handler.redirectUrlAPI)
 	route.Use(auth.Authenticate)
 	route.POST("/create_url", handler.createUrlAPI)
 }
@@ -66,5 +66,8 @@ func (handler *urlHandler) redirectUrlAPI(ctx *gin.Context) {
 		SendError(ctx, err)
 		return
 	}
+	go func() {
+		handler.UrlUCase.RecordStatistic(view.Hash)
+	}()
 	ctx.Redirect(http.StatusPermanentRedirect, originalURL)
 }

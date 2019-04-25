@@ -7,4 +7,5 @@ var (
 	ErrBadRequestedData = errors.New("ERROR_BAD_REQUESTED_DATA")
 	ErrLTinyUrlNotFound = errors.New("ERROR_TINY_URL_NOT_FOUND")
 	ErrForbidden        = errors.New("ERROR_FORBIDDEN")
+	ErrTinyUrlExpired   = errors.New("ERROR_TINY_URL_EXPIRED")
 )
