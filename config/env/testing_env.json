@@ -2,12 +2,12 @@
   "mongo": {
     "host": "localhost",
     "port": "27017",
-    "db_tiny_url": "tiny_url"
+    "db_tiny_url": "tiny_url_testing"
   },
   "redis": {
     "host": "localhost",
     "port": "6379",
     "password": "talo",
-    "db": 0
+    "db": 1
   }
 }

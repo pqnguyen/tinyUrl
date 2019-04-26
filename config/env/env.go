@@ -4,17 +4,21 @@ import (
 	"fmt"
 	"github.com/spf13/viper"
 	"log"
+	"os"
+	"tinyUrl/types/enums"
 )
 
 type MongoConfig struct {
-	Host string
-	Port string
+	Host      string
+	Port      string
+	DBTinyUrl string
 }
 
 type RedisConfig struct {
 	Host     string
 	Port     string
 	Password string
+	DB       int
 }
 
 func (mg *MongoConfig) GetURI() string {
@@ -32,20 +36,24 @@ func (redis RedisConfig) GetAddr() string {
 
 var Config *Configuration
 
-func InitEnvironment() {
-	viper.SetConfigFile("config/env/local_env.json")
+func InitEnvironment(env enums.Environment) {
+	fmt.Println(os.Getwd())
+	fileConfig := fmt.Sprintf("config/env/%s_env.json", env)
+	viper.SetConfigFile(fileConfig)
 	if err := viper.ReadInConfig(); err != nil {
 		log.Fatalf("[ERROR] got error while read config file: %v", err)
 	}
 	Config = &Configuration{
 		MongoConfig: MongoConfig{
-			Host: viper.GetString("mongo.host"),
-			Port: viper.GetString("mongo.port"),
+			Host:      viper.GetString("mongo.host"),
+			Port:      viper.GetString("mongo.port"),
+			DBTinyUrl: viper.GetString("mongo.db_tiny_url"),
 		},
 		RedisConfig: RedisConfig{
 			Host:     viper.GetString("redis.host"),
 			Port:     viper.GetString("redis.port"),
 			Password: viper.GetString("redis.password"),
+			DB:       viper.GetInt("redis.db"),
 		},
 	}
 }

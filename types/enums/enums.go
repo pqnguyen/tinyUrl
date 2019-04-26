@@ -3,6 +3,17 @@ package enums
 type RedisNameSpace = string
 
 const (
-	UrlNS  = "url"
-	UserNS = "user"
+	UrlNS  RedisNameSpace = "url"
+	UserNS RedisNameSpace = "user"
 )
+
+type Environment = string
+
+const (
+	Local      Environment = "local"
+	Testing    Environment = "testing"
+	Sandbox    Environment = "sandbox"
+	Production Environment = "production"
+)
+
+type DatabaseName = string

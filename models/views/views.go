@@ -1,8 +1,7 @@
 package views
 
 type CreateFreeURLView struct {
-	Url            string `json:"url" binding:"required"`
-	ExpiryDuration uint   `json:"expiry_duration" binding:"exists"`
+	Url string `json:"url" binding:"required"`
 }
 
 type CreateURLView struct {

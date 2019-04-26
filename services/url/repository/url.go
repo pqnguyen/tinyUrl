@@ -38,7 +38,7 @@ func (u *urlRepository) CreateURL(user *User, originalURL string, expiryDuration
 		Hash:           string(hash[:constant.DefaultHashLength]),
 		OriginalURL:    originalURL,
 		CreationDate:   time.Now(),
-		ExpirationDate: time.Now().Add(expiryDuration * time.Second),
+		ExpirationDate: time.Now().Add(expiryDuration),
 		UserID:         user.ID,
 	}
 	b, err := bson.Marshal(&urlObj)

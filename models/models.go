@@ -9,12 +9,7 @@ import (
 	"log"
 	"time"
 	"tinyUrl/config/env"
-)
-
-type DatabaseName = string
-
-const (
-	DBTinyUrl = "tiny_url"
+	"tinyUrl/types/enums"
 )
 
 type Collection struct {
@@ -25,7 +20,7 @@ type Collection struct {
 
 var Col Collection
 
-var database = make(map[DatabaseName]*mongo.Database)
+var database = make(map[enums.DatabaseName]*mongo.Database)
 var redis *_redis.Client
 
 func InitModels() {
@@ -37,7 +32,7 @@ func initCache() {
 	redis = _redis.NewClient(&_redis.Options{
 		Addr:     env.Config.RedisConfig.GetAddr(),
 		Password: env.Config.RedisConfig.Password,
-		DB:       0, // use default DB
+		DB:       env.Config.RedisConfig.DB, // use default DB
 	})
 
 	pong, err := redis.Ping().Result()
@@ -63,7 +58,7 @@ func initDatabase() {
 
 	log.Printf("[INFO] connect successful to mongodb server")
 
-	database[DBTinyUrl] = client.Database(DBTinyUrl)
+	database[env.Config.MongoConfig.DBTinyUrl] = client.Database(env.Config.MongoConfig.DBTinyUrl)
 	Col = Collection{
 		Url:       "url",
 		User:      "user",
@@ -72,11 +67,24 @@ func initDatabase() {
 }
 
 func DB() *mongo.Database {
-	dbUrl, ok := database[DBTinyUrl]
+	dbUrl, ok := database[env.Config.MongoConfig.DBTinyUrl]
 	if !ok {
 		log.Fatalf("[ERROR] init database before get one")
 	}
 	return dbUrl
+}
+
+func ClearDB() error {
+	dbUrl, ok := database[env.Config.MongoConfig.DBTinyUrl]
+	if !ok {
+		log.Fatalf("[ERROR] init database before get one")
+	}
+	return dbUrl.Drop(context.Background())
+}
+
+func ClearCache() error {
+	statusCmd := Redis().FlushAll()
+	return statusCmd.Err()
 }
 
 func Redis() *_redis.Client {
