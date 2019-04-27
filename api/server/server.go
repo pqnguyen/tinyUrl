@@ -3,6 +3,7 @@ package server
 import (
 	"github.com/gin-gonic/gin"
 	"log"
+	"tinyUrl/api/server/auth_handler"
 	"tinyUrl/api/server/url_handler"
 )
 
@@ -11,6 +12,9 @@ func CreateServer() *gin.Engine {
 
 	urlGroup := router.Group("")
 	url_handler.NewUrlHandler(urlGroup)
+
+	authGroup := router.Group("/auth")
+	auth_handler.NewAuthHandler(authGroup)
 	return router
 }
 

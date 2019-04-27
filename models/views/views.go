@@ -12,3 +12,18 @@ type CreateURLView struct {
 type RedirectUrlView struct {
 	Hash string `uri:"hash" binding:"required"`
 }
+
+type PasswordLoginView struct {
+	Email    string `json:"email" binding:"required"`
+	Password string `json:"password" binding:"required"`
+}
+
+type PasswordRegisterView struct {
+	Name     string `json:"name" binding:"required"`
+	Email    string `json:"email" binding:"required"`
+	Password string `json:"password" binding:"required"`
+}
+
+type GoogleLoginView struct {
+	IdToken string `json:"idToken" binding:"required"`
+}

@@ -3,7 +3,7 @@ package url_handler
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"tinyUrl/api/server/auth"
+	"tinyUrl/api/server/auth_handler"
 	. "tinyUrl/context"
 	"tinyUrl/models/views"
 	"tinyUrl/services/url"
@@ -22,7 +22,7 @@ func NewUrlHandler(route *gin.RouterGroup) {
 
 	route.POST("/create_free_url", handler.createFreeUrlAPI)
 	route.GET("/:hash", handler.redirectUrlAPI)
-	route.Use(auth.Authenticate)
+	route.Use(auth_handler.Authenticate)
 	route.POST("/create_url", handler.createUrlAPI)
 }
 
