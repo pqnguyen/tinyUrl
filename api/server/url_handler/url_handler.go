@@ -2,7 +2,6 @@ package url_handler
 
 import (
 	"github.com/gin-gonic/gin"
-	"net/http"
 	"tinyUrl/api/server/auth_handler"
 	. "tinyUrl/context"
 	"tinyUrl/models/views"
@@ -69,5 +68,5 @@ func (handler *urlHandler) redirectUrlAPI(ctx *gin.Context) {
 	go func() {
 		handler.UrlUCase.RecordStatistic(view.Hash)
 	}()
-	ctx.Redirect(http.StatusPermanentRedirect, originalURL)
+	SendSuccess(ctx, gin.H{"original_url": originalURL})
 }
