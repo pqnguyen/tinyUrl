@@ -1,8 +1,8 @@
 package url
 
 import (
+	"github.com/pqnguyen/tinyUrl/models"
 	"time"
-	"tinyUrl/models"
 )
 
 type Repository interface {

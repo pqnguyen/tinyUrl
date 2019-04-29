@@ -5,12 +5,12 @@ import (
 	"crypto/md5"
 	"encoding/base64"
 	"fmt"
+	"github.com/pqnguyen/tinyUrl/config/constant"
+	. "github.com/pqnguyen/tinyUrl/models"
+	"github.com/pqnguyen/tinyUrl/services/url"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"time"
-	"tinyUrl/config/constant"
-	. "tinyUrl/models"
-	"tinyUrl/services/url"
 )
 
 type urlRepository struct {

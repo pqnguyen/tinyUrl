@@ -10,6 +10,7 @@ const (
 type Environment = string
 
 const (
+	Docker     Environment = "docker"
 	Local      Environment = "local"
 	Testing    Environment = "testing"
 	Sandbox    Environment = "sandbox"

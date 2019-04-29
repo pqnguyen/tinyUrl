@@ -1,8 +1,8 @@
 package usecase
 
 import (
-	"tinyUrl/models"
-	"tinyUrl/services/user"
+	"github.com/pqnguyen/tinyUrl/models"
+	"github.com/pqnguyen/tinyUrl/services/user"
 )
 
 type userUseCase struct {

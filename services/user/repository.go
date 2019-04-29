@@ -1,6 +1,6 @@
 package user
 
-import "tinyUrl/models"
+import "github.com/pqnguyen/tinyUrl/models"
 
 type Repository interface {
 	GetFreeUser() *models.User

@@ -1,4 +1,4 @@
-module tinyUrl
+module github.com/pqnguyen/tinyUrl
 
 go 1.12
 

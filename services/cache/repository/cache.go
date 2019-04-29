@@ -2,10 +2,10 @@ package repository
 
 import (
 	"fmt"
+	"github.com/pqnguyen/tinyUrl/models"
+	"github.com/pqnguyen/tinyUrl/services/cache"
+	"github.com/pqnguyen/tinyUrl/types/enums"
 	"time"
-	"tinyUrl/models"
-	"tinyUrl/services/cache"
-	"tinyUrl/types/enums"
 )
 
 type cacheRepository struct {

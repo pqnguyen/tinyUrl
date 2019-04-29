@@ -2,12 +2,12 @@ package url_handler
 
 import (
 	"github.com/gin-gonic/gin"
-	"tinyUrl/api/server/auth_handler"
-	. "tinyUrl/context"
-	"tinyUrl/models/views"
-	"tinyUrl/services/url"
-	"tinyUrl/services/usecase"
-	"tinyUrl/types/code"
+	"github.com/pqnguyen/tinyUrl/api/server/auth_handler"
+	. "github.com/pqnguyen/tinyUrl/context"
+	"github.com/pqnguyen/tinyUrl/models/views"
+	"github.com/pqnguyen/tinyUrl/services/url"
+	"github.com/pqnguyen/tinyUrl/services/usecase"
+	"github.com/pqnguyen/tinyUrl/types/code"
 )
 
 type urlHandler struct {

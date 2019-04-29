@@ -1,18 +1,18 @@
 package url_handler
 
 import (
+	"github.com/pqnguyen/tinyUrl/config/env"
+	"github.com/pqnguyen/tinyUrl/models"
+	"github.com/pqnguyen/tinyUrl/services/cache"
+	"github.com/pqnguyen/tinyUrl/services/url"
+	"github.com/pqnguyen/tinyUrl/services/usecase"
+	"github.com/pqnguyen/tinyUrl/types/code"
+	"github.com/pqnguyen/tinyUrl/types/enums"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"log"
 	"sync"
 	"testing"
 	"time"
-	"tinyUrl/config/env"
-	"tinyUrl/models"
-	"tinyUrl/services/cache"
-	"tinyUrl/services/url"
-	"tinyUrl/services/usecase"
-	"tinyUrl/types/code"
-	"tinyUrl/types/enums"
 )
 
 type urlHandlerTest struct {

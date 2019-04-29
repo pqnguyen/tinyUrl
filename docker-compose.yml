@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    image: 'pqnguyen/tinyurl_web'
+    ports:
+      - "3000:80"
+  backend:
+    build: .
+    ports:
+      - "8080:8080"
+  redis:
+    image: 'redis'
+    command: redis-server --requirepass talo
+  mongo:
+    image: 'mongo'

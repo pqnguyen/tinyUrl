@@ -4,16 +4,16 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"github.com/pqnguyen/tinyUrl/api/server"
+	"github.com/pqnguyen/tinyUrl/config/env"
+	"github.com/pqnguyen/tinyUrl/models"
+	"github.com/pqnguyen/tinyUrl/services/usecase"
+	"github.com/pqnguyen/tinyUrl/types/enums"
 	"io"
 	"log"
 	"net/http"
 	"net/http/httptest"
 	"testing"
-	"tinyUrl/api/server"
-	"tinyUrl/config/env"
-	"tinyUrl/models"
-	"tinyUrl/services/usecase"
-	"tinyUrl/types/enums"
 )
 
 func before() {

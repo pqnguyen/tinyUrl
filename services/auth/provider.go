@@ -1,6 +1,6 @@
 package auth
 
-import "tinyUrl/context"
+import "github.com/pqnguyen/tinyUrl/context"
 
 type Provider interface {
 	Login(context *context.Context) (string, error)

@@ -1,6 +1,6 @@
 package url
 
-import "tinyUrl/models"
+import "github.com/pqnguyen/tinyUrl/models"
 
 type UseCase interface {
 	CreateUrl(user *models.User, url string, duration uint) (*models.Url, error)

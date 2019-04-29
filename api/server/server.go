@@ -2,11 +2,11 @@ package server
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/pqnguyen/tinyUrl/api/server/auth_handler"
+	"github.com/pqnguyen/tinyUrl/api/server/url_handler"
+	"github.com/pqnguyen/tinyUrl/context"
 	"log"
 	"net/http"
-	"tinyUrl/api/server/auth_handler"
-	"tinyUrl/api/server/url_handler"
-	"tinyUrl/context"
 )
 
 func cors(ctx *context.Context) {

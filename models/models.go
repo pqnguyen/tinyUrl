@@ -3,13 +3,13 @@ package models
 import (
 	"context"
 	_redis "github.com/go-redis/redis"
+	"github.com/pqnguyen/tinyUrl/config/env"
+	"github.com/pqnguyen/tinyUrl/types/enums"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"go.mongodb.org/mongo-driver/mongo/readpref"
 	"log"
 	"time"
-	"tinyUrl/config/env"
-	"tinyUrl/types/enums"
 )
 
 type Collection struct {
@@ -48,10 +48,10 @@ func initDatabase() {
 		log.Fatalf("[ERROR] got error when creating mongodb client: %v", err)
 	}
 
-	ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
+	ctx, _ := context.WithTimeout(context.Background(), 20*time.Second)
 	err = client.Connect(ctx)
 
-	ctx, _ = context.WithTimeout(context.Background(), 10*time.Second)
+	ctx, _ = context.WithTimeout(context.Background(), 20*time.Second)
 	if err := client.Ping(ctx, readpref.Primary()); err != nil {
 		log.Fatalf("[ERROR] got error when ping to mongodb server: %v", err)
 	}

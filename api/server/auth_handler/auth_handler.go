@@ -3,12 +3,12 @@ package auth_handler
 import (
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
+	. "github.com/pqnguyen/tinyUrl/context"
+	"github.com/pqnguyen/tinyUrl/services/auth"
+	"github.com/pqnguyen/tinyUrl/services/auth/password"
+	"github.com/pqnguyen/tinyUrl/services/usecase"
+	"github.com/pqnguyen/tinyUrl/services/user"
 	"strings"
-	. "tinyUrl/context"
-	"tinyUrl/services/auth"
-	"tinyUrl/services/auth/password"
-	"tinyUrl/services/usecase"
-	"tinyUrl/services/user"
 )
 
 type authHandler struct {

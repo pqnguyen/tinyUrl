@@ -1,6 +1,6 @@
 package google
 
-import "tinyUrl/context"
+import "github.com/pqnguyen/tinyUrl/context"
 
 type Config struct{}
 

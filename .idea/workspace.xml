@@ -7,9 +7,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a0b1199-6aa3-4d26-9fa8-8a870d3d97f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/env/docker_env.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/auth_handler/auth_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/auth_handler/auth_handler.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/server/url_handler/url_handler.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/url_handler/url_handler.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server/url_handler/url_handler_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/server/url_handler/url_handler_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/env/env.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/env/env.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/context/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/context/context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/models.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth/google/google.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth/google/google.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth/password/authority.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth/password/authority.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth/password/password.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth/password/password.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth/provider.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth/provider.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cache/repository/cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/cache/repository/cache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/cache/usecase/cache_ucase.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/cache/usecase/cache_ucase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/sample/repository/sample.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/sample/repository/sample.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/sample/usecase/sample_ucase.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/sample/usecase/sample_ucase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/url/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/url/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/url/repository/url.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/url/repository/url.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/url/usecase.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/url/usecase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/url/usecase/url_ucase.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/url/usecase/url_ucase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/usecase/usercase.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/usecase/usercase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user/repository.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/user/repository.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user/repository/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/user/repository/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user/usecase.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/user/usecase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user/usecase/user_ucase.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/user/usecase/user_ucase.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/enums/enums.go" beforeDir="false" afterPath="$PROJECT_DIR$/types/enums/enums.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/response/response.go" beforeDir="false" afterPath="$PROJECT_DIR$/types/response/response.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,37 +54,67 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/views/views.go">
+        <entry file="file://$PROJECT_DIR$/api/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="90">
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/main.go">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="165">
+              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/server/server.go">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="90">
+              <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/server/url_handler/url_handler.go">
+        <entry file="file://$PROJECT_DIR$/config/env/docker_env.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+            <state relative-caret-position="45">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/env/local_env.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/models.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="50" column="57" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+              <folding>
+                <element signature="e#16#301#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/env/env.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-211">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -76,7 +137,14 @@
       <find>redis</find>
       <find>github.com/ugorji/go/codec</find>
       <find>map[string]interface{}</find>
+      <find>talo.io/talo-api/services/sample</find>
+      <find>tinyUrl/services/sample</find>
+      <find>tinyUrl</find>
+      <find>tinyUrl/</find>
     </findStrings>
+    <replaceStrings>
+      <replace>github.com/pqnguyen/tinyUrl/</replace>
+    </replaceStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
@@ -103,21 +171,15 @@
         <option value="$PROJECT_DIR$/types/types.go" />
         <option value="$PROJECT_DIR$/services/cache/repository/cache.go" />
         <option value="$PROJECT_DIR$/go.sum" />
-        <option value="$PROJECT_DIR$/go.mod" />
-        <option value="$PROJECT_DIR$/context/context.go" />
         <option value="$PROJECT_DIR$/models/url_model.go" />
         <option value="$PROJECT_DIR$/config/constant/constant.go" />
         <option value="$PROJECT_DIR$/services/url/usecase.go" />
         <option value="$PROJECT_DIR$/services/url/usecase/url_ucase.go" />
         <option value="$PROJECT_DIR$/config/env/local_env.json" />
-        <option value="$PROJECT_DIR$/types/enums/enums.go" />
         <option value="$PROJECT_DIR$/config/env/testing_env.json" />
-        <option value="$PROJECT_DIR$/config/env/env.go" />
         <option value="$PROJECT_DIR$/services/url/repository/url.go" />
         <option value="$PROJECT_DIR$/services/cache/usecase.go" />
         <option value="$PROJECT_DIR$/services/cache/usecase/cache_ucase.go" />
-        <option value="$PROJECT_DIR$/models/models.go" />
-        <option value="$PROJECT_DIR$/api/main.go" />
         <option value="$PROJECT_DIR$/api/server/url_handler/url_handler_test.go" />
         <option value="$PROJECT_DIR$/api/main_test.go" />
         <option value="$PROJECT_DIR$/services/auth/provider.go" />
@@ -133,12 +195,22 @@
         <option value="$PROJECT_DIR$/services/auth/claims.go" />
         <option value="$PROJECT_DIR$/services/auth/password/authority.go" />
         <option value="$PROJECT_DIR$/api/server/auth_handler/auth_handler.go" />
-        <option value="$PROJECT_DIR$/api/server/server.go" />
         <option value="$PROJECT_DIR$/api/server/url_handler/url_handler.go" />
+        <option value="$PROJECT_DIR$/api/server/server.go" />
+        <option value="$PROJECT_DIR$/services/sample/repository/sample.go" />
+        <option value="$PROJECT_DIR$/types/enums/enums.go" />
+        <option value="$PROJECT_DIR$/api/main.go" />
+        <option value="$PROJECT_DIR$/context/context.go" />
+        <option value="$PROJECT_DIR$/go.mod" />
+        <option value="$PROJECT_DIR$/config/env/env.go" />
+        <option value="$PROJECT_DIR$/models/models.go" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/config/env/docker_env.json" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="739" />
@@ -158,24 +230,13 @@
             <path>
               <item name="tinyUrl" type="b2602c69:ProjectViewProjectNode" />
               <item name="tinyUrl" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tinyUrl" type="b2602c69:ProjectViewProjectNode" />
               <item name="tinyUrl" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinyUrl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinyUrl" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tinyUrl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tinyUrl" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="env" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -195,7 +256,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/config/env" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="coverage" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Go" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -215,16 +276,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="tinyUrl" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/api/main.go" />
-      <package value="tinyUrl" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="TestCreateFreeUrlAPI in tinyUrl/api/server/url_handler" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="tinyUrl" />
       <working_directory value="$PROJECT_DIR$" />
@@ -234,28 +286,6 @@
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <pattern value="^TestCreateFreeUrlAPI$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestCreateFreeUrlAPI in tinyUrl/api/server/url_handler" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="tinyUrl" />
-      <working_directory value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="tinyUrl/api/server/url_handler" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestCreateFreeUrlAPI$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestRouting in tinyUrl/api" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="tinyUrl" />
-      <working_directory value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="tinyUrl/api" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestRouting$" />
       <method v="2" />
     </configuration>
     <configuration name="url_handler_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -268,22 +298,89 @@
       <filePath value="$PROJECT_DIR$/api/server/url_handler/url_handler_test.go" />
       <method v="2" />
     </configuration>
-    <configuration name="url_handler_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="tinyUrl" />
-      <working_directory value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <package value="tinyUrl" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/api/server/url_handler/url_handler_test.go" />
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="GIT_TERMINAL_PROMPT" />
+                <option name="value" value="1" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="imageTag" value="tiny-url" />
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.backend: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="backend" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.mongo: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mongo" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.redis: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="redis" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Docker.docker-compose.yml.redis: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.mongo: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.backend: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Test.TestRouting in tinyUrl/api" />
-        <item itemvalue="Go Test.TestRouting in tinyUrl/api" />
-        <item itemvalue="Go Test.url_handler_test.go" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.backend: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.mongo: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.redis: Compose Deployment" />
+        <item itemvalue="Docker.Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -320,22 +417,22 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="739" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31260097" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31260097" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35085008" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35068494" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39863014" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.5082192" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32876712" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32766616" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -393,7 +490,8 @@
     <MESSAGE value="Implement statistic for every redirect" />
     <MESSAGE value="Write unit test for every feature and routing test server" />
     <MESSAGE value="Implement login with password and validate jwt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement login with password and validate jwt" />
+    <MESSAGE value="Implement cors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement cors" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -414,107 +512,6 @@
     <SUITE FILE_PATH="coverage/tinyUrl$TestExpiredUrl_in_tinyUrl_api_server_url_handler__1_.out" NAME="TestExpiredUrl in tinyUrl/api/server/url_handler (1) Coverage Results" MODIFIED="1556256227968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/go.mongodb.org/mongo-driver@v1.0.1/mongo/database.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="183" column="20" selection-start-line="183" selection-start-column="20" selection-end-line="183" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/cache/usecase.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/github.com/go-redis/redis@v6.15.2+incompatible/command.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/github.com/go-redis/redis@v6.15.2+incompatible/commands.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="2140" column="34" selection-start-line="2140" selection-start-column="34" selection-end-line="2140" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/testing/testing.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="1167" column="18" lean-forward="true" selection-start-line="1167" selection-start-column="18" selection-end-line="1167" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/cache/usecase/cache_ucase.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/cache/repository.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/cache/repository/cache.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/models.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/env/env.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="38" column="45" lean-forward="true" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/net/http/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/net/http/httptest/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="97" column="30" selection-start-line="97" selection-start-column="30" selection-end-line="97" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/go/src/net/http/client.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="762" column="35" selection-start-line="762" selection-start-column="35" selection-end-line="762" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/server/url_handler/url_handler_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="57" />
-          <folding>
-            <element signature="e#21#274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/url/usecase/url_ucase.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -536,13 +533,6 @@
           <folding>
             <element signature="e#14#129#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/env/local_env.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -678,13 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/server/auth_handler/auth_handler.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/auth/claims.go">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -744,20 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/views/views.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../pkg/mod/github.com/gin-gonic/gin@v1.3.1-0.20190418024537-f9de6049cbf0/gin.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -772,17 +741,152 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/services/sample/repository.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/views/views.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/sample/repository/sample.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#20#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/constant/constant.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/context/context.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#17#179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/sample/usecase/sample_ucase.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/types/enums/enums.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/server/url_handler/url_handler.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        <state relative-caret-position="-278">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/server/auth_handler/auth_handler.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/server/url_handler/url_handler_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/server/server.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="52">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.sum">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3841">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/env.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/models.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="50" column="57" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+          <folding>
+            <element signature="e#16#301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/local_env.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/env/docker_env.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
         </state>
       </provider>
     </entry>

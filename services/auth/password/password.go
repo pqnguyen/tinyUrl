@@ -1,10 +1,10 @@
 package password
 
 import (
-	"tinyUrl/context"
-	"tinyUrl/models/views"
-	"tinyUrl/services/user"
-	"tinyUrl/types/code"
+	"github.com/pqnguyen/tinyUrl/context"
+	"github.com/pqnguyen/tinyUrl/models/views"
+	"github.com/pqnguyen/tinyUrl/services/user"
+	"github.com/pqnguyen/tinyUrl/types/code"
 )
 
 type Config struct {

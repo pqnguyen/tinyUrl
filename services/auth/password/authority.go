@@ -5,9 +5,9 @@ import (
 	"encoding/base64"
 	"fmt"
 	"github.com/dgrijalva/jwt-go"
+	"github.com/pqnguyen/tinyUrl/models"
+	"github.com/pqnguyen/tinyUrl/services/auth"
 	"time"
-	"tinyUrl/models"
-	"tinyUrl/services/auth"
 )
 
 type PasswordAuthority interface {

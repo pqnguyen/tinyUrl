@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"tinyUrl/services/sample"
+	"github.com/pqnguyen/tinyUrl/services/sample"
 )
 
 type sampleUseCase struct {

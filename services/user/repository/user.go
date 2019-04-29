@@ -2,11 +2,11 @@ package repository
 
 import (
 	"context"
+	. "github.com/pqnguyen/tinyUrl/models"
+	"github.com/pqnguyen/tinyUrl/services/user"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"time"
-	. "tinyUrl/models"
-	"tinyUrl/services/user"
 )
 
 type userRepository struct {

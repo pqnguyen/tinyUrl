@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"tinyUrl/services/cache"
+	"github.com/pqnguyen/tinyUrl/services/cache"
 )
 
 type cacheUseCase struct {

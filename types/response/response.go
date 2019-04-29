@@ -1,7 +1,7 @@
 package response
 
 import (
-	"tinyUrl/types/code"
+	"github.com/pqnguyen/tinyUrl/types/code"
 )
 
 type Response struct {

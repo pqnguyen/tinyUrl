@@ -1,15 +1,15 @@
 package usecase
 
 import (
-	"tinyUrl/services/cache"
-	_cacheRepo "tinyUrl/services/cache/repository"
-	_cacheUcase "tinyUrl/services/cache/usecase"
-	"tinyUrl/services/url"
-	_urlRepo "tinyUrl/services/url/repository"
-	_urlUCase "tinyUrl/services/url/usecase"
-	"tinyUrl/services/user"
-	_userRepo "tinyUrl/services/user/repository"
-	_userUcase "tinyUrl/services/user/usecase"
+	"github.com/pqnguyen/tinyUrl/services/cache"
+	_cacheRepo "github.com/pqnguyen/tinyUrl/services/cache/repository"
+	_cacheUcase "github.com/pqnguyen/tinyUrl/services/cache/usecase"
+	"github.com/pqnguyen/tinyUrl/services/url"
+	_urlRepo "github.com/pqnguyen/tinyUrl/services/url/repository"
+	_urlUCase "github.com/pqnguyen/tinyUrl/services/url/usecase"
+	"github.com/pqnguyen/tinyUrl/services/user"
+	_userRepo "github.com/pqnguyen/tinyUrl/services/user/repository"
+	_userUcase "github.com/pqnguyen/tinyUrl/services/user/usecase"
 )
 
 var UrlUCase url.UseCase

@@ -2,7 +2,7 @@ package repository
 
 import (
 	"github.com/jinzhu/gorm"
-	"talo.io/talo-api/services/sample"
+	"github.com/pqnguyen/tinyUrl/services/sample"
 )
 
 type sampleRepository struct {

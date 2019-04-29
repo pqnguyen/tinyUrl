@@ -1,0 +1,13 @@
+{
+  "mongo": {
+    "host": "mongo",
+    "port": "27017",
+    "db_tiny_url": "tiny_url"
+  },
+  "redis": {
+    "host": "redis",
+    "port": "6379",
+    "password": "talo",
+    "db": 0
+  }
+}

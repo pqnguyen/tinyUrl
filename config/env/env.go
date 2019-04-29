@@ -2,10 +2,9 @@ package env
 
 import (
 	"fmt"
+	"github.com/pqnguyen/tinyUrl/types/enums"
 	"github.com/spf13/viper"
 	"log"
-	"os"
-	"tinyUrl/types/enums"
 )
 
 type MongoConfig struct {
@@ -37,7 +36,6 @@ func (redis RedisConfig) GetAddr() string {
 var Config *Configuration
 
 func InitEnvironment(env enums.Environment) {
-	fmt.Println(os.Getwd())
 	fileConfig := fmt.Sprintf("config/env/%s_env.json", env)
 	viper.SetConfigFile(fileConfig)
 	if err := viper.ReadInConfig(); err != nil {

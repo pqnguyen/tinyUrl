@@ -1,6 +1,6 @@
 package user
 
-import "tinyUrl/models"
+import "github.com/pqnguyen/tinyUrl/models"
 
 type UseCase interface {
 	Exists(email string) (*models.User, bool)

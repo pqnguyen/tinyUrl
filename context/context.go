@@ -2,11 +2,11 @@ package context
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/pqnguyen/tinyUrl/models"
+	"github.com/pqnguyen/tinyUrl/types/code"
+	"github.com/pqnguyen/tinyUrl/types/response"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"net/http"
-	"tinyUrl/models"
-	"tinyUrl/types/code"
-	"tinyUrl/types/response"
 )
 
 type Context = gin.Context
